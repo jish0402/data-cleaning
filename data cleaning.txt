@@ -1,0 +1,32 @@
+primary_names=[]
+secondary_names=[]
+surname_category = []
+for i in range(0,668):
+    if "JAIN" in primary_names[i]:
+        surname_category.insert(i,"1")
+    elif ("AGGARWAL" or "AGARWAL" or "GUPTA" or "GARG" or "GOYAL" or "GOEL" or "VAISH" or "SINGHAL" or "SINGHLA" or "JAISWAL" or "BERNWAL" or "BENIWAL") in primary_names[i]:
+        surname_category.insert(i,"2")
+    elif ("BALI" or "MOHIYAL" or "BASI"or "BASSI" or "BHARADWAJ" or "BHARDWAJ" or "GAUR" or "SHARMA" or "MISHRA" or "MISRA" or "SHUKLA" or "TRIPATHI" or "PANDEY" or "PATHAK" or "DIXIT" or "DIKSHIT" or "CHATURVEDI" or "TRIVEDI" or "DUBEY" or "VASHISHTH" or "JHA") in primary_names[i]:
+        surname_category.insert(i,"3")
+    elif ("SINGH" or "YADAV" or "SHRIVASTAVA" or "SRIVASTAVA" or "SINHA" or "VERMA" or "PAL" or "MAURYA" or "KUSHWAHA" or "RAJBHAV" or "PASWAN" or "CHAUHAN" or "PATEL" or "NISAD") in primary_names[i]:
+        surname_category.insert(i,"4")
+    elif ("MOHD" or "MOHAMMAD" or "KHATOON" or "SHAKEEL" or "SHAH" or "MD" or "KHAN" or "HASAN") in primary_names[i]:
+        surname_category.insert(i,"6")
+    elif "KAUR" in primary_names[i]:
+        surname_category.insert(i,"7")
+    else:
+        if "JAIN" in secondary_names[i]:
+            surname_category.insert(i,"1")
+        elif ("AGGARWAL" or "AGARWAL" or "GUPTA" or "GARG" or "GOYAL" or "GOEL" or "VAISH" or "SINGHAL" or "SINGHLA" or "JAISWAL" or "BERNWAL" or "BENIWAL") in secondary_names[i]:
+            surname_category.insert(i,"2")
+        elif ("BALI" or "MOHIYAL" or "BASI"or "BASSI" or "BHARADWAJ" or "BHARDWAJ" or "GAUR" or "SHARMA" or "MISHRA" or "MISRA" or "SHUKLA" or "TRIPATHI" or "PANDEY" or "PATHAK" or "DIXIT" or "DIKSHIT" or "CHATURVEDI" or "TRIVEDI" or "DUBEY" or "VASHISHTH" or "JHA") in secondary_names[i]:
+            surname_category.insert(i,"3")
+        elif ("SINGH" or "YADAV" or "SHRIVASTAVA" or "SRIVASTAVA" or "SINHA" or "VERMA" or "PAL" or "MAURYA" or "KUSHWAHA" or "RAJBHAV" or "PASWAN" or "CHAUHAN" or "PATEL" or "NISAD") in secondary_names[i]:
+            surname_category.insert(i,"4")
+        elif ("MOHD" or "MOHAMMAD" or "KHATOON" or "SHAKEEL" or "SHAH" or "MD" or "KHAN" or "HASAN") in secondary_names[i]:
+            surname_category.insert(i,"6")
+        elif "KAUR" in secondary_names[i]:
+            surname_category.insert(i,"7")
+        else:
+            surname_category.insert(i,"8")
+print(surname_category)
